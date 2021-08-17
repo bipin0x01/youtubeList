@@ -12,7 +12,7 @@ function Playcard() {
 
     useEffect(() => {
         async function fetchData() {
-            const res = await prefService.getAll(); 
+            const res = await prefService.getAllPref(); 
             setPref(res.data);
         }
 
