@@ -29,16 +29,23 @@ Get Started:
 
 ## API Endpoints
 USER ENPOINTS
-LIST ALL USERS
+
+**LIST ALL USERS**
 
 GET    api/user
 
 
-LIST Specific User
+**LIST SPECIFIC USER**
 
 GET	api/user{id}
 
-ADD NEW USER
+**DELETE USER**
+
+GET	api/user/delete/{id}
+
+
+**ADD NEW USER**
+
 POST	api/user/add
 
 Example:
@@ -55,14 +62,14 @@ Example:
 	}
 (note: all fields and mandatory)
 
-Delete User
-GET	api/user/delete/{id}
 
 
-LIST ALL PREFERENCES
+**LIST ALL PREFERENCES**
+
 GET    api/preference
 
-Add new preference
+**ADD NEW PREFERENCE**
+
 POST	api/preference/add
 
 Example:
