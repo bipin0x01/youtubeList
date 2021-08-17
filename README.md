@@ -6,20 +6,19 @@
 Get Started:
 
 # 1. Edit the env-sample file
-	Put your mongodb cred in 'MONGO_URI'
-	Specify a PORT number for backend
-	
-	Save the file as '.env'
+Put your mongodb cred in 'MONGO_URI'
+Specify a PORT number for backend
+Save the file as '.env'
 
 # 2. Install dependencies and Run Backend Server
-~ cd server 
-~ npm install
-~ npm start
+	~ cd server 
+	~ npm install
+	~ npm start
 
 # 3. Run Frontend Server
-~ cd client
-~ npm install 
-~ npm start
+	~ cd client
+	~ npm install 
+	~ npm start
 
 # Now browser it in local server through port 3000
 
@@ -32,21 +31,21 @@ USER ENPOINTS
 
 **LIST ALL USERS**
 
-GET    			'/api/user'
+	GET    			'/api/user'
 
 
 **LIST SPECIFIC USER**
 
-GET			'/api/user{id}'
+	GET			'/api/user{id}'
 
 **DELETE USER**
 
-GET			'/api/user/delete/{id}'
+	GET			'/api/user/delete/{id}'
 
 
 **ADD NEW USER**
 
-POST			'/api/user/add'
+	POST			'/api/user/add'
 
 Example:
 	
@@ -66,11 +65,11 @@ Example:
 
 **LIST ALL PREFERENCES**
 
-GET    			'/api/preference'
+	GET    			'/api/preference'
 
 **ADD NEW PREFERENCE**
 
-POST			'/api/preference/add'
+	POST			'/api/preference/add'
 
 Example:
 
