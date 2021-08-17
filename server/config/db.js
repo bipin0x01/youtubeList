@@ -1,12 +1,13 @@
 import mongoose from "mongoose";
+import dotenv from "dotenv";
 
-
+dotenv.config({path: "../.env"})
 
 
 // Mongodb Database connection
 const connectDB = async () => {
     try {
-        const connect = await mongoose.connect('mongodb+srv://bipin123:bipin123@cluster0.lfsbj.mongodb.net/ytlist?retryWrites=true&w=majority', {
+        const connect = await mongoose.connect(process.env.MONGO_URI, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
             useFindAndModify: false,

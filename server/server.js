@@ -5,12 +5,12 @@ import userRoutes from "./Routes/userRoutes.js";
 import prefRoutes from "./Routes/prefRoutes.js";
 import dotenv from "dotenv";
 
-dotenv.config();
+dotenv.config({path: "../.env"});
 
 // Initialize Database Connection
 connectDB();
 const app = express();
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.SERVER_PORT || 5500;
 
 // Middlewares
 app.use(cors());
