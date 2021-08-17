@@ -32,21 +32,21 @@ USER ENPOINTS
 
 **LIST ALL USERS**
 
-GET    			api/user
+GET    			'/api/user'
 
 
 **LIST SPECIFIC USER**
 
-GET			api/user{id}
+GET			'/api/user{id}'
 
 **DELETE USER**
 
-GET			api/user/delete/{id}
+GET			'/api/user/delete/{id}'
 
 
 **ADD NEW USER**
 
-POST			api/user/add
+POST			'/api/user/add'
 
 Example:
 	
@@ -66,15 +66,15 @@ Example:
 
 **LIST ALL PREFERENCES**
 
-GET    			api/preference
+GET    			'/api/preference'
 
 **ADD NEW PREFERENCE**
 
-POST			api/preference/add
+POST			'/api/preference/add'
 
 Example:
 
-	POST 	api/preference/add
+	POST 	/api/preference/add
 
 	{
    	 "favouriteMusic": "Rock You",
